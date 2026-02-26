@@ -3,18 +3,18 @@ schema_version: 1
 
 context:
   name: django-log-request-id
-  version: "2.1.0"
+  version: "2.1.1"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django-log-request-id-${{ version }}.tar.gz
-  sha256: b11fc821774b54b820ef2e732dbaa52304711de8d5c4f9031ca48578f6121ab6
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 4ce4fadf7eeff62e856dc85f4ad1b8958298881787805bd714e05ddb6be5da39
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
