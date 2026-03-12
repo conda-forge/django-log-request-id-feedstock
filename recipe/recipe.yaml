@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-log-request-id
-  version: "2.1.1"
+  version: "2.1.2"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 4ce4fadf7eeff62e856dc85f4ad1b8958298881787805bd714e05ddb6be5da39
+  sha256: 4fe8e0702b09e8b08676f237d94063e0d54fc4d8867570bea6719ceba0a32486
 
 build:
   number: 0
